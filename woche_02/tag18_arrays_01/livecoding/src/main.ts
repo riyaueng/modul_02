@@ -87,7 +87,7 @@ console.log(characters)
 // sort sortiert Arrays und mutiert diese dabei
 // Wir können sort eine custom Sortierfunktion übergeben, ansonsten wird alphabetisch sortiert, auch bei Zahlen
 
-const monthsAgaib = ["March", "Jan", "Feb", "Dec"]
+const monthsAgain = ["March", "Jan", "Feb", "Dec"]
 months.sort() // -> ["Dec", "Feb", "Jan", "March" ]
 
 // ! Aber
@@ -117,12 +117,18 @@ const obstKopie1 = [...obst]
 // andere Möglichkeit:
 const obstKopie3 = obst.concat()
 
-// * Higher Ordeer Functions
+// * Higher Order Functions
 
 // * .forEach
 // Wir können forEach auf jedem Array aufrufen und ihm eine Funktion als Argument übergeben
 // Diese Funktion wird dann für jedes Element im Array aufgerufen
 
-combinedArray.forEach(function (element, index) {
-  console.log(element, index)
-})
+// ? const meinCallbackFuerForEach = function (element, index) {
+// ?  console.log(element, index)
+// ? }
+
+// ? combinedArray.forEach(meinCallbackFuerForEach)
+
+// combinedArray.forEach(function (element, index) {
+//   console.log(element, index)
+// })
