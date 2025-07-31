@@ -121,7 +121,7 @@ console.log(beispielArray.sort((a, b) => a.length - b.length))
 // * .map
 // .map ist eine Array-Methode, die einen Array aus einen Array mit transformierten Elementen verwandeln kann
 
-// const resultArray = beispielArray.map((element) => element.toLocaleUpperCase())
+// const resultArray = beispielArray.map((element) => element.toUpperCase())
 
 console.log({ resultArray })
 

@@ -94,7 +94,7 @@ months.sort() // -> ["Dec", "Feb", "Jan", "March" ]
 
 const numbersAgain = [11, 2, 1, 0, 9]
 numbersAgain.sort() // -> [0, 1, 11, 2, 9]
-// ! Badle lernen wir, wie wir das Sortierverhalten konfigurieren können
+// ! Bald lernen wir, wie wir das Sortierverhalten konfigurieren können
 
 //  * Arrays kombinieren
 const obst = ["Blaubeeren", "Birnen", "Melone", "Mango", "Himberren"]
