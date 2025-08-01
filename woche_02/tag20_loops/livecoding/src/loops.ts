@@ -125,3 +125,5 @@ do {
 //   console.log("Hey")
 //   index++
 // }
+
+// ? Bonusaufgabe: Mit do-while die Sortierung in einem Rutsch zu bringen

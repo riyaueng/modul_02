@@ -3,7 +3,7 @@
 const arrayInput = document.querySelector<HTMLInputElement>("#array_input")
 const buttonElement = document.querySelector<HTMLButtonElement>("#button")
 
-// * Mit dem Optional Chaining Operator (?.) können wir aucf Properties von Werten zugreifen, die vielleicht nicht vorhanden sind. Falls sie nicht vorhanden sind, ist das Ergebnis undefined
+// * Mit dem Optional Chaining Operator (?.) können wir auf Properties von Werten zugreifen, die vielleicht nicht vorhanden sind. Falls sie nicht vorhanden sind, ist das Ergebnis undefined
 // const inputValue = arrayInput? arrayInput.value : undefined
 // const inputValue = arrayInput?.value
 
