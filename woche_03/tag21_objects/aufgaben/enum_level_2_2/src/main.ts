@@ -1,4 +1,4 @@
-// import "./style.css"
+import "./style.css"
 
 console.log("Test")
 
@@ -20,3 +20,27 @@ const allColors: ClothingColor[] = [
   ClothingColor.Grau,
 ]
 console.log(allColors)
+
+const btnColors1 = document.querySelectorAll<HTMLButtonElement>(".btns_color1")
+
+btnColors1.forEach((btn, i) => {
+  btn.style.backgroundColor = allColors[i]
+})
+
+// * --------- Object.keys und Object.value ---------
+
+// Object.keys(ClothingColor)
+// console.log(Object.keys(ClothingColor))
+
+// Object.values(ClothingColor)
+// console.log(Object.values(ClothingColor))
+
+// const btnColors2 = document.querySelectorAll<HTMLButtonElement>(".btns_colors2")
+
+// btnColors2.forEach((btn, i) => {
+//   btn.style.backgroundColor = Object.keys(ClothingColor)[i]
+// })
+
+// Object.values(ClothingColor).forEach((color) => {
+//   color.style.backgroundColor = btnColors2
+// })
