@@ -5,22 +5,22 @@ export class Customer {
   private _postalCode: string = ""
   private _city: string = ""
 
-  public get costumerName(): string {
+  public get customerName(): string {
     return this._name
   }
 
-  public get costumerEmail(): string {
+  public get customerEmail(): string {
     return this._email
   }
-  public get costumerAddress(): string {
+  public get customerAddress(): string {
     return this._address
   }
 
-  public get costumerPostalCode(): string {
+  public get customerPostalCode(): string {
     return this._postalCode
   }
 
-  public get costumerCity(): string {
+  public get customerCity(): string {
     return this._city
   }
 
@@ -35,23 +35,24 @@ export class Customer {
   public set checkEmail(emailValue: string) {
     if (emailValue.includes("@") && emailValue.includes(".")) {
       this._email = emailValue
+    } else {
+      console.error("Please insert @ in your email.")
     }
-    console.error("Please insert @ in your email.")
   }
 
   public set checkPostelCode(postelCodeValue: string) {
     if (postelCodeValue.length === 5 && Number(postelCodeValue) >= 0 && Number(postelCodeValue) <= 99999) {
-      this._name = postelCodeValue
+      this._postalCode = postelCodeValue
     } else {
       console.error("This is not a valid postel code.")
     }
   }
 
   constructor(name: string, email: string, address: string, postalCode: string, city: string) {
-    this._name = name
-    this._email = email
+    this.checkName = name
+    this.checkEmail = email
     this._address = address
-    this._postalCode = postalCode
+    this.checkPostelCode = postalCode
     this._city = city
   }
 }

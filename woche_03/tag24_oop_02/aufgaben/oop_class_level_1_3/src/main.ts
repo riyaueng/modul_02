@@ -22,7 +22,7 @@ console.log(myAnimal1.animaColor)
 
 const myPerson1 = new Person("Erika", new Date("2001-05-22"), Gender.FEMALE)
 const myPerson2 = new Person("Jaimy", new Date("1997-12-04"), Gender.DIVERSE)
-const myPerson3 = new Person("Nils", new Date("1995-08-17"), Gender.DIVERSE)
+const myPerson3 = new Person("Nils", new Date("1995-08-17"), Gender.MALE)
 
 console.log(myPerson1)
 console.log(myPerson2)
@@ -30,8 +30,8 @@ console.log(myPerson3)
 
 console.log(myPerson1._name)
 console.log(myPerson2.personbirthday)
-console.log(myPerson1.gender)
+console.log(myPerson1.personGender)
 
 myPerson3.gender = Gender.DIVERSE
 console.log(myPerson3.personGender)
-console.log(myPerson3.name)
+console.log(myPerson3.personName)

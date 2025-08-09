@@ -24,7 +24,7 @@ for (const ice of icecreamArray) {
 
 console.clear()
 
-icecreamArray.forEach((icecream) => {
+icecreamArray.forEach((icecream: IceCreamFlavor) => {
   console.log(icecream)
   console.log(`Gesamtpreis: ${icecream.getTotalPrice(4)}`)
   icecream.printInfo()
@@ -33,4 +33,25 @@ icecreamArray.forEach((icecream) => {
 
 // * -------- Aufgabe Class Level 1_12 Bonus --------
 
-const iceContainer1 = document.querySelector<HTMLDivElement>(".div_icecream")
+const iceContainer1 = document?.querySelector<HTMLDivElement>(".div_icecream")
+
+// icecreamArray.forEach((ice: IceCreamFlavor) => {
+//   const divElement = document.createElement("div") as HTMLDivElement
+//   const headlineElement = document.createElement("h2") as HTMLHeadingElement
+//   const textElement = document.createElement("p") as HTMLParagraphElement
+//   headlineElement.textContent = ice._name
+//   headlineElement.style.color = #FF368D
+//   // textElement.textContent = ice._price
+//   textElement.style.color = "black"
+//   divElement.style.backgroundColor = "white"
+//   iceContainer1.appendChild(divElement)
+// })
+
+// obstsalat.forEach((obst: string) => {
+//   const listElement = document.createElement("li") as HTMLLIElement
+
+//   listElement.style.color = "red"
+//   listElement.style.listStyle = "none"
+//   listElement.textContent = obst
+//   ungeordneteListeElement.appendChild(listElement)
+// })
