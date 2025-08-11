@@ -6,6 +6,7 @@ class Series extends Episode {
   _description: string
   _startYear: number
   _endYear: number
+  //  _episodes: Episode[];
 
   constructor(
     episodeTitle: string,
@@ -16,6 +17,7 @@ class Series extends Episode {
     description: string,
     startYear: number,
     endYear: number
+    // episodes: Episode[]
   ) {
     super(episodeTitle, episodeLength, episodeDescription, actors)
     this._title = title
@@ -25,15 +27,21 @@ class Series extends Episode {
   }
 
   printSeriesInfo(): string {
+    let actorValue = ""
+    this._actors.forEach((actor) => {
+      actorValue += `
+      - ${actor._firstName} ${actor._lastName} 
+      - Birthday: ${actor._birthday} 
+      - Gender: ${actor._gender}`
+    })
+
     return `Titel: ${this._title}
     Description: ${this._description}
     Start Year: ${this._startYear}
     End Year: ${this._endYear}
     Number of Episodes: ${this._length}
     \n
-    Actors: ${this._actors.forEach((actor) => console.log(actor))}
-    - Birthday: 
-    – Gender: `
+    Actors: ${actorValue}`
   }
 }
 

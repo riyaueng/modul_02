@@ -10,7 +10,7 @@ class Episode {
     this._title = title
     this._length = length
     this._description = description
-    this._actors = actors = []
+    this._actors = actors
   }
 }
 
