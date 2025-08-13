@@ -1,0 +1,194 @@
+:root {
+  --mb: 5vh;
+  --pd: 2vh;
+  --br: 10px;
+  --english-violet: #6b4e71ff;
+  --charcoal: #3a4454ff;
+  --paynes-gray: #53687eff;
+  --misty-rose: #f5ddddff;
+  --french-grey: #cdc0c6;
+}
+
+/* GLOBAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  color: var(--charcoal);
+  background-color: var(--misty-rose);
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px -1px 2.5px var(--paynes-gray);
+  margin-bottom: var(--mb);
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+a {
+  text-decoration: none;
+  color: var(--paynes-gray);
+}
+
+div,
+.reset {
+  font-size: 1.5vw;
+}
+
+label {
+  font-size: 1.5vw;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--mb);
+  height: 100vh;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section "Wie viele Runden" */
+.count-rounds {
+  background-color: var(--french-grey);
+  border: 2px solid var(--charcoal);
+  border-radius: var(--br);
+  margin-bottom: var(--mb);
+  padding: var(--pd);
+  text-align: center;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.count-rounds:hover {
+  box-shadow: 1px -1px 10px var(--paynes-gray);
+}
+
+.runden-anzeige {
+  display: none;
+}
+
+.runden-anzahl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin: 0 0.6vh 0 var(--pd);
+  transform: scale(1.25);
+}
+
+/* Section Spielstand */
+.score-board {
+  width: 50%;
+  padding: var(--pd);
+  margin-bottom: var(--mb);
+  border: 2px solid var(--charcoal);
+  border-radius: var(--br);
+  background-color: var(--french-grey);
+  text-align: center;
+}
+
+.tag {
+  margin-top: -0.5%;
+  display: inline-block;
+  background-color: var(--english-violet);
+  color: var(--misty-rose);
+  padding: 0.5%;
+  border: 2px solid var(--charcoal);
+  border-radius: var(--br);
+}
+.spieler {
+  position: absolute;
+  left: 29%;
+}
+
+.computer {
+  position: absolute;
+  right: 28%;
+}
+article div {
+  display: inline;
+}
+
+/* Section "Lass uns spielen" */
+.action-output {
+  margin-bottom: var(--mb);
+}
+
+/* Section Schere Stein Papier Buttons */
+.choices {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1vh;
+}
+
+.choices button {
+  background-color: white;
+  width: 12vw;
+  height: 12vw;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.choices button:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+  box-shadow: 1px -1px 10px var(--paynes-gray);
+}
+
+.reset {
+  align-self: flex-end;
+  padding: var(--pd);
+  border: 2px solid var(--charcoal);
+  border-radius: var(--br);
+  background-color: var(--paynes-gray);
+  color: var(--misty-rose);
+  transition: 0.4s ease-in-out;
+}
+
+.reset:hover {
+  cursor: pointer;
+  box-shadow: 1px -1px 10px var(--paynes-gray);
+  transform: scale(1.01);
+  background-color: var(--english-violet);
+  color: var(--misty-rose);
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}

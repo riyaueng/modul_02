@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #045c59;
+}
+
+body {
+  margin: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#btn {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: rgb(26, 236, 190);
+  color: #045c59;
+  margin: 2rem 0;
+}
+
+span {
+  font-weight: 600;
+}

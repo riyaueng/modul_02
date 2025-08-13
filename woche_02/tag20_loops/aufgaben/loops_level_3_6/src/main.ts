@@ -1,5 +1,3 @@
-import "./style.css"
-
 function calcAverage(classNumbers: number[]) {
   if (classNumbers.length === 0) return "Keine Schulnote"
 

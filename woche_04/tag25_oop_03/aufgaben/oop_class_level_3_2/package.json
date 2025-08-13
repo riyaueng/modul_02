@@ -1,5 +1,5 @@
 {
-  "name": "loops_level_3_6",
+  "name": "oop_class_level_3_2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,6 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "email-validator": "^2.0.4",
+    "lit": "^3.3.1"
   },
   "devDependencies": {
     "typescript": "~5.8.3",
