@@ -1,0 +1,74 @@
+// Anstatt import zu schreiben, könnne wir durch @use unsere sachen wie Klassen, SCSS und mixin importieren
+
+@use "./klassen.scss";
+@use "./mixin.scss";
+@use "./variables.scss";
+
+// # ------ Nesting -------
+
+// * Mit dem "&" kann man mit nth-of-type arbeiten, wenn man ein einzelnes Child-Element von einem Parent-Element ansprechen möchte
+// * Das betrifft alle Pseudo-Elemente
+
+// Um mixin benutzen zu können, brauchen wir das Keyword @include
+
+header {
+  @include mixin.displayFlex();
+
+  img {
+    border-radius: 50%;
+  }
+  nav {
+    a {
+      text-decoration: none;
+      font-size: 24px;
+      color: black;
+
+      &:nth-of-type(2) {
+        margin: 0 29px;
+      }
+    }
+  }
+}
+
+main {
+  @include mixin.tablet {
+    background-color: red;
+  }
+
+  @include mixin.smartphone {
+    background-color: green;
+  }
+
+  section {
+    &:nth-of-type(1) {
+      h2 {
+        @include mixin.headlineStyle(20px, "Tahoma", center);
+      }
+
+      // Zum Verwenden von Variablen aus einer anderen SCSS-Datei => nameDerDatei.$variableName
+
+      p {
+        font-size: variables.$text_fz;
+      }
+    }
+  }
+
+  article {
+    button {
+      &:nth-last-of-type(1) {
+        @include mixin.btnStyle(10px, 20px 30px, pink, 20px);
+      }
+      &:nth-last-of-type(2) {
+        @include mixin.btnStyle(10px, 20px 30px, rgb(251, 91, 91), 20px);
+      }
+    }
+  }
+}
+
+// Zum Verwenden der Klasse brauche wir das Keyword @extend und direkt den Klassennamen
+
+footer {
+  button {
+    @extend .btn;
+  }
+}

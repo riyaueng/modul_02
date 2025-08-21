@@ -1,0 +1,16 @@
+// # ----------- Variablen -----------
+
+// Der Name der Variable ist frei wählbar, allerdings sollte sie sinngemäß sein
+
+// ! -> headline_fontsize: blue -> nicht gut!
+// * -> headline_color: blue -> gut
+
+// WARUM VARIABLEN? Wenn wir mit Variablen arbeiten, z. B. fton-size von allen Healdines, dann müssen wir das nur an einer Stelle im Code ändern und nicht mehr durch das komplette Styling gehen und an verschiedene Stellen Änderungen vornehmen
+
+// ! Wie ist die Schreibweise?
+
+// ? Die Variablen sollen immer mit $-Zeichen geschrieben werden und dann kommt der Name
+
+$headline_fz: 28px;
+$text_fz: 18px;
+$bg_section: #d2d2d2;

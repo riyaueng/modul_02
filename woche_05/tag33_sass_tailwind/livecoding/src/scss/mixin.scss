@@ -1,0 +1,44 @@
+// # --------------- mixin ---------------
+
+// mixin funktioniert genauso wie eine function in TS/JS
+// Dadurch kann ich super die DRY-Prinzipien ("Don't repeat yourself")
+
+// ! Wie schreibt man eine MIXIN ?
+// mixin sollte am Anfang mit '@' beginnen und dann kommt das Keyword "mixin" und dann der Name der function, dananch die runden Klammern und darin schreiben wir die Parameter mit '$' und die geschweifte Klammern
+
+@mixin btnStyle($br, $pad, $bgc, $fz) {
+  border-radius: $br;
+  padding: $pad;
+  background-color: $bgc;
+  font-size: $fz;
+}
+
+// * Mit einem Dopplepunkt hinter einem Parameter (z. B. §fc: "irgendwas" kann ich einen default-Wert für die CSS Eigenschaft vergeben und muss diese nicht mehr beim Verwenden des mixins angegeben werden
+
+@mixin headlineStyle($fz, $ff, $textPos, $fc: green) {
+  font-size: $fz;
+  font-family: $ff;
+  text-align: $textPos;
+  color: $fc;
+}
+
+@mixin displayFlex($dp: flex, $jc: justify-content, $ai: align-items) {
+  display: $dp;
+  align-items: $jc;
+  justify-content: $ai;
+}
+
+// * Für Media-Querie sollte das Keyword media verwendet werden und beginnt immer mit "@"
+// * Die Werte werden nur beim verwenden erst geschrieben und das Keyword contet beinhaltet in sich die Eigenschaften
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin smartphone {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
