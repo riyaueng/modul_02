@@ -4,7 +4,7 @@ import { Validator } from "./classes/Validator"
 const customer1 = new Customer("Eva", "eevie@gmail.de", "Route 3", "23964", "Azuria City")
 const customer2 = new Customer(
   "MissignNoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
-  "buggy@gmail.de",
+  "buggygmail.de",
   "Route 25",
   "X54ghv",
   "Zinnoberinsel"
@@ -19,3 +19,4 @@ console.log(customer3)
 console.log(customer4.customerName)
 console.log(customer3.customerPostalCode)
 console.log(customer1.customerEmail)
+console.log(customer2.customerEmail)

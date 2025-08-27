@@ -10,4 +10,8 @@ export class Validator {
   constructor(email: string) {
     this._email = email
   }
+
+  static validateEmail(email: string): boolean {
+    return EmailValidator.validate(email)
+  }
 }

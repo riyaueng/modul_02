@@ -7,7 +7,7 @@ const actor1 = new Actors("Joe", "Doe", "23.06.1987", "Male")
 const actor2 = new Actors("Juliet", "Doit", "23.06.1987", "Female")
 const actor3 = new Actors("Jaimy", "Done", "23.06.1987", "Diverse")
 
-const actorsArray = [actor1, actor2, actor3]
+const actorsArray: Actors[] = [actor1, actor2, actor3]
 
 console.log(actorsArray)
 
@@ -27,3 +27,5 @@ const serie2 = new Series("Middle Party", 15, "Lorem Ispum2", actorsArray, "Seri
 const serie3 = new Series("Ending Season", 23, "Lorem Ispum3", actorsArray, "Serie 03", "Horro Comedy", 2023, 2027)
 
 console.log(serie1.printSeriesInfo())
+console.log(serie2.printSeriesInfo())
+console.log(serie3.printSeriesInfo())

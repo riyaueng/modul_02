@@ -1,3 +1,5 @@
+import { Validator } from "./Validator"
+
 export class Customer {
   private _name: string = ""
   private _email: string = ""
@@ -29,6 +31,14 @@ export class Customer {
       this._name = nameValue
     } else {
       console.error("Costumer name is too long.")
+    }
+  }
+
+  public set email(value: string) {
+    if (Validator.validateEmail(value)) {
+      this._email = value
+    } else {
+      console.error("Email address is invalid. Please enter a valid email address.")
     }
   }
 
